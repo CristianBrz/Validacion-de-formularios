@@ -1,3 +1,11 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* font-family: "Comic Sans MS", Calibri, sans-serif; */
+	/* font-family: 'Roboto', sans-serif; */
+}
+
 .control{
 	width: 99%;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -12,13 +20,15 @@
 }
 
 form{
-	width: 30%;
+	width: 50%;
 }
 
 table{
 	background: rgb(125, 125, 125);
 	border: 1px;
 	width: 100%;
+	padding: 5px;
+	margin: 20px;
 }
 
 td{

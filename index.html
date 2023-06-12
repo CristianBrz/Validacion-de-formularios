@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/styles/styles.css">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Validacion de datos</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Validación de datos</title>
+  </head>
+  <body>
+    <h1>Validación de datos</h1>
 
-	<form action="" name="formulario" id="formulario" onsubmit="return false">
-		<table>
-			<tr>
-				<td>
-					<label for="dni" id="lbldni">DNI:</label>
-				</td>
-			</tr>
-		</table>
-	</form>
+    <form action="" name="formulario" id="formulario" onsubmit="return false">
+      <table>
+        <tr>
+          <td>
+            <label for="dni" id="lbldni">DNI:</label>
+          </td>
+          <td>
+            <input
+              class="control"
+              type="number"
+              name="dni"
+              id="dni"
+              placeholder="DNI" />
+          </td>
+        </tr>
 
+				<tr>
+					<td>
+						<label for="nombre">Nombre:</label>
+					</td>
+					<td>
+						<input class="control" type="text" name="nombre" id="nombre" maxlength="50" placeholder="Nombre">
+					</td>
+				</tr>
 
+				<tr>
+					<td>
+						<label for="apellido">Apellido:</label>
+					</td>
+					<td>
+						<input class="control" type="text" name="apellido" id="apellido" maxlength="150" placeholder="Apellido">
+					</td>
+				</tr>
 
-	<script src="./assets/js/main.js"></script>
-</body>
+				<tr>
+					<td>
+						<label for="email">Email:</label>
+					</td>
+					<td>
+						<input class="control" type="text" name="email" id="email" maxlength="150" placeholder="Email">
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<button class="control" id="btnGuardar">Guardar</button>
+					</td>
+				</tr>
+				
+      </table>
+    </form>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
