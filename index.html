@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
     <title>Validación de datos</title>
   </head>
   <body>
     <h1>Validación de datos</h1>
 
-
-    <form action="" name="formulario" id="formulario" onsubmit="return false">
+    <form action="ejemplo.com" name="formulario" id="formulario" onsubmit="return false">
       <fieldset>
-        <label for="dni" id="lbldni">
-          DNI:
+        <div class="data">
+          <label for="dni" id="lbldni"> DNI: </label>
           <input
             class="control"
             type="number"
             name="dni"
             id="dni"
-            placeholder="DNI" />
-        </label>
+            placeholder="DNI">
+        </div>
 
-        <label for="nombre">
-          Nombre:
+        <div class="data">
+          <label for="nombre"> Nombre: </label>
           <input
             class="control"
             type="text"
             name="nombre"
             id="nombre"
             maxlength="50"
-            placeholder="Nombre" />
-        </label>
+            placeholder="Nombre">
+        </div>
 
-        <label for="apellido">
-          Apellido:
+        <div class="data">
+          <label for="apellido"> Apellido: </label>
           <input
             class="control"
             type="text"
             name="apellido"
             id="apellido"
             maxlength="150"
-            placeholder="Apellido" />
-        </label>
+            placeholder="Apellido">
+        </div>
 
-        <label for="email">
-          Email:
+        <div class="data">
+          <label for="email"> Email: </label>
           <input
             class="control"
             type="text"
             name="email"
             id="email"
             maxlength="150"
-            placeholder="Email" />
-        </label>
+            placeholder="Email">
+        </div>
 
-        <div><button class="control" id="btnGuardar">Guardar</button></div>
+        <div class="btn"><button class="control" id="btnGuardar">Enviar</button></div>
       </fieldset>
     </form>
 
